@@ -1,7 +1,0 @@
-Hp = 100
-hit = int(input())
-while True:
-    Hp -= hit
-    print(Hp)
-    if Hp == 0:
-        break
