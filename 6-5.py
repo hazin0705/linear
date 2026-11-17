@@ -56,3 +56,4 @@ else:
     print("\n검산")
     print(f"3x1 - 2x2 = {result1}")
     print(f"-5x1 + 4x2 = {result2}")
+

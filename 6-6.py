@@ -53,3 +53,4 @@ else:
     print(A @ solution)
     print("\n원래 상수벡터 b")
     print(b)
+
