@@ -1,0 +1,30 @@
+import numpy as np
+
+u = np.array([1,1,0],dtype=float)
+v = np.array([0,1,1],dtype=float)
+
+dot_product = np.dot(u,v)
+norm_u = np.linalg.norm(u)
+norm_v = np.linalg.norm(v)
+
+distance = np.linalg.norm(u-v)
+
+print(f"내적 = {dot_product:.6f}")
+print(f"거리 = {distance:.6f}")
+
+if norm_u == 0 or norm_v == 0:
+    print("영벡터가 포함되어 각도는 정의되지 않습니다")
+
+else:
+   cos_theta = dot_product / (norm_u*norm_v)
+   cos_theta = np.clip(cos_theta,-1.0,1.0)
+
+   theta_rad = np.arccos(cos_theta)
+   theta_deg = np.degrees(theta_rad)
+   
+
+   print(f"cos(theta).   ={cos_theta:.6f}")
+   print(f"각도(도)    ={theta_deg:.6f}도")
+
+ 
+
